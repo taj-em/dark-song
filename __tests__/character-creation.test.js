@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { Character } from '../src/characterStats/character-creation';
 
 describe('Character', () => {

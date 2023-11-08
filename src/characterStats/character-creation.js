@@ -21,7 +21,3 @@ export function Character(characterClass) {
     this.magicDef = 1;
   }
 }
-
-
-let character = new Character(1, 2, 3);
-console.log(character);

@@ -8,5 +8,10 @@ export function getRequiredXp(requiredXP) {
 }
 
 export function levelSystem() {
-
+  let requiredXP = 4;
+  let currentXP = 4;
+  if (currentXP === requiredXP) {
+    requiredXP = getRequiredXp(requiredXP);
+  }
+  return requiredXP;
 }
