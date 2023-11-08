@@ -1,11 +1,20 @@
-import '../src/combat';
+import { AttackStats } from "../src/combat";
+import { DefenseStats } from "../src/combat";
 
-// describe('Triangle', () => {
+describe('AttackStats', () => {
 
-//   test('should correctly create a triangle object with three lengths', () => {
-//     const triangle = new Triangle(2,4,5);
-//     expect(triangle.side1).toEqual(2);
-//     expect(triangle.side2).toEqual(4);
-//     expect(triangle.side3).toEqual(5);
-//   });
-// });
+  test('should store a characters initial attack stats', () => {
+    const attackStats = new AttackStats(2,4);
+    expect(attackStats.physicalAtk).toEqual(2);
+    expect(attackStats.magicAtk).toEqual(4);
+  });
+});
+
+describe('DefenseStats', () => {
+
+  test('should store a characters initial Defense stats', () => {
+    const defenseStats = new DefenseStats(2,4);
+    expect(defenseStats.physicalDef).toEqual(2);
+    expect(defenseStats.magicDef).toEqual(4);
+  });
+});
