@@ -1,12 +1,9 @@
-import '../src/leveling';
+import { getRequiredXp } from "../src/characterStats/leveling";
 
+describe('getRequiredXp', () => {
 
-// describe('Triangle', () => {
-
-//   test('should correctly create a triangle object with three lengths', () => {
-//     const triangle = new Triangle(2,4,5);
-//     expect(triangle.side1).toEqual(2);
-//     expect(triangle.side2).toEqual(4);
-//     expect(triangle.side3).toEqual(5);
-//   });
-// });
+  test('should take the current required XP and double it', () => {
+    const xpTest = getRequiredXp(4);
+    expect(xpTest).toEqual(8); 
+  });
+});

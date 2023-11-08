@@ -1,4 +1,4 @@
-import { Character } from '../src/character-creation';
+import { Character } from '../src/characterStats/character-creation';
 
 describe('Character', () => {
 

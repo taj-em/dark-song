@@ -1,4 +1,4 @@
-import './combat';
-import './inventory';
-import './leveling';
+import './characterStats/combat';
+import './characterStats/inventory';
+import './characterStats/leveling';
 
