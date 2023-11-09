@@ -11,7 +11,7 @@ describe('getRequiredXp', () => {
 
 describe('levelSystem', () => {
 
-  test('should return new requiredXP value when currentXP and requiredXP are the saeme', () => {
+  test('should return new requiredXP value when currentXP and requiredXP are the same', () => {
     const xpTest = levelSystem();
     expect(xpTest).toEqual(8);
   });
