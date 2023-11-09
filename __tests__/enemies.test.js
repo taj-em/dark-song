@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { enemyHealth, enemyStats } from "../src/enemyStats/enemies";
+import { enemyHealth, knightAttack, enemyGenerator } from "../src/characterStats/playerAttacks";
 
 describe('enemyHealth', () => {
 
@@ -9,10 +9,18 @@ describe('enemyHealth', () => {
   });
 });
 
-describe('enemyStats', () => {
+describe('knightAttack', () => {
 
   test('should determine how much damage an attack does to enemy hp', () => {
-    const healthBarTest = enemyStats("Knight", "Physical", "Skeleton");
+    const healthBarTest = knightAttack("Physical", "Skeleton");
     expect(healthBarTest).toEqual(8);
   });
 });
+
+describe('enemyGenerator', () => {
+
+  test('should return a new enemy type based on a random number', () => {
+    const generatorTest = enemyGenerator();
+    expect(generatorTest).toEqual("Skeleton" || "Troll");
+  })
+})
